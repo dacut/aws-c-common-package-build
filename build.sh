@@ -10,7 +10,7 @@ if [[ ! -f v$VERSION.tar.gz ]]; then
     curl -s -o v$VERSION.tar.gz "$DOWNLOAD_URL"
 fi
 
-for TARGET in amzn1 el7; do
+for TARGET in amzn1 amzn2 el7; do
 	docker build -t build-${PACKAGE}:$TARGET -f $TARGET.dockerfile .
 	rm -rf $EXPORT/$TARGET
 	mkdir -p $EXPORT/$TARGET/SRPMS $EXPORT/$TARGET/RPMS/$ARCH
