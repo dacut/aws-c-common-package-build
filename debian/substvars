@@ -1,0 +1,2 @@
+binary:Version=0.4.3
+shlibs:Depends=libc6 (>= 2.14)
