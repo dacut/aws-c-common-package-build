@@ -1,2 +1,2 @@
-binary:Version=0.4.3
+binary:Version=@VERSION@
 shlibs:Depends=libc6 (>= 2.14)

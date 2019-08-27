@@ -1,6 +1,6 @@
 Name:           aws-c-common
-Version:        0.4.3
-Release:        0%{dist}
+Version:        %{version}
+Release:        %{rel}%{dist}
 Summary:        AWS C Common
 
 License:        ASL 2.0
